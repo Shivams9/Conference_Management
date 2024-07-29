@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Conference</title>
+</head>
+<body>
+    <h1>Add Conference</h1>
+    <form action="{{ url_for('add_conference') }}" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        
+        <button type="submit">Add Conference</button>
+    </form>
+</body>
+</html>
